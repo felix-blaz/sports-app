@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title> gym app </title>
+<link rel="stylesheet" href="Css/jquerymobile.css" />
+<link rel="stylesheet" href="themes/my-custom-theme.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquerymobile.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+
+</head>
+	
+	<body>    <!-- log in-->
+			<div data-role="page" id="login">
+
+					<div data-role="header">
+						<h1>Melbourne Storms</h1>
+					</div><!-- /header -->
+				
+					<div role="main" class="ui-content">
+					<p>
+					<img src="images/storm.svg"width="100%">
+					</p>
+						<label for="text-basic">Email</label>
+						<input type="text" name="text-basic" id="text-basic" value="">
+						
+						<label for="password">Password:</label>
+						<input type="password" name="password" id="password" value="" autocomplete="off">
+						
+					
+						<a href="#menu" class="ui-btn ui-btn-a">Sign In</a>
+						<a href="#sign up" class="ui-btn ui-btn-a">Sign Up</a>
+						
+					
+						
+					</div><!-- /content -->
+				
+					<div data-role="footer">
+						<h4></h4>
+					</div><!-- /footer -->
+				</div><!-- end of log in-->
+				
+				<!-- main menu -->
+				<div data-role="page" id="menu">
+				
+					<div data-role="header">
+						<h1>Menu</h1>
+						<a href="#login" class="ui-btn ui-icon-lock ui-btn-icon-notext ui-corner-all"></a> 
+					</div><!-- /header -->
+				
+					<div role="main" class="ui-content">
+					
+						<ul data-role= "listview">
+					 	<li><a href="#buy tickets">Buy Ticket</a></li>
+						   
+						<li><a href="#fixtures">Fixtures </a></li>  
+					    <li><a href="#video highlights">Video Highlights</a></li>
+					    <li><a href="#player and stats"> Players and Stats</a></li>
+					    <li><a href="#competitions">Competitions</a></li>
+					 
+					  	</ul>
+
+					
+						
+					</div><!-- /content -->
+				
+					<div data-role="footer">
+						<h4></h4>
+					</div><!-- /footer -->
+				</div><!-- /page -->
+
+				<!-- buy tickets -->
+				<div data-role="page" id="buy tickets">
+				
+					<div data-role="header">
+						
+						<a href="#menu" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a> 
+						<h1>Tickets</h1>
+					</div><!-- /header -->
+				
+					<div role="main" class="ui-content">
+							<form>
+									<div class="ui-field-contain">
+									    <label for="select-native-1">select match:</label>
+									    <select name="select-native-1" id="select-native-1">
+									        <option value="1">storm vs raiders $20</option>
+									        <option value="2">storm vs broncos $20</option>
+									        <option value="3">storm vs panthers $20</option>
+									        <option value="4">storm vs bulldogs $20 </option>
+									    </select>
+									</div>
+									</form>
+									<a href="#" class="ui-btn">Purchase</a>
+						
+					</div><!-- /content -->
+				
+					<div data-role="footer">
+						<h4></h4>
+					</div><!-- /footer -->
+				</div><!-- /page -->
+				
+				<!--  fixtures -->
+				<div data-role="page" id="fixtures">
+				
+					<div data-role="header">
+							<h1>Upcoming Fixtures</h1>
+						<a href="#menu" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a> 
+					</div><!-- /header -->
+				
+					<div role="main" class="ui-content">
+						
+							<ul data-role="listview">
+									    <li><center><strong>storm vs broncos</strong> 14th March</center></li>
+									    <li><center><strong>storm vs raiders</strong> 22 March</center></li>
+									    <li><center><strong>storm vs panthers</strong> 30th March</center></li>
+									    <li><center><strong>strom vs bulldogs </strong>7th April</center></li>
+										 <li><center><strong>strom vs cowboys </strong>12th April</center></li>
+										 <li><center><strong>strom vs roosters </strong>19th April</center></li>
+										 <li><center><strong>strom vs warriors </strong>25th April</center></li>
+										 <li><center><strong>strom vs sharks </strong>3rd May</center></li>
+										 <li><center><strong>strom vs eels </strong>11th May</center></li>
+										 <li><center><strong>strom vs west tigers </strong>16th May</center></li>
+							</ul>
+					
+					</div><!-- /content -->
+				
+					<div data-role="footer">
+						<h4></h4>
+					</div><!-- /footer -->
+				</div><!-- /page -->
+			
+				<!-- vieo highlights-->
+				<div data-role="page" id="video highlights">
+				
+					<div data-role="header">
+						<h1> Video highights</h1>
+						<a href="#menu" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a> 
+					</div><!-- /header -->
+				
+					<div role="main" class="ui-content">
+							<div class="ui-field-contain">
+									    <label for="select-native-1">select match:</label>
+									    <select name="select-native-1" id="select-native-1">
+									        <option value="1">Match Highlights: Storm v Rabbitohs - Finals Week 1, 2018</option>
+									        <option value="2">Match Highlights: Storm v Sharks - Finals Week 3, 2018</option>
+									        <option value="3">Match Highlights: Bulldogs v Storm - Round 1, 2018</option>
+									        
+									    </select>
+							</div>
+					</div><!-- /content -->
+				
+					<div data-role="footer">
+						<h4></h4>
+					</div><!-- /footer -->
+				</div><!-- /page -->
+				
+				<!-- stats-->
+				<div data-role="page" id="player and stats">
+				
+					<div data-role="header">
+						<h1>Player Statistics</h1>
+						<a href="#menu" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a> 
+					</div><!-- /header -->
+				
+					<div role="main" class="ui-content">
+
+							<p>
+									<img src="images/storm.svg"width="100%">
+									</p>
+
+							   <table data-role="table" id="movie-table" data-mode="reflow" class="ui-responsive">
+									  <thead>
+									    <tr>
+									      <th data-priority="1">Player Name </th>
+									      <th data-priority="persist">Position</th>
+									      <th data-priority="2">Age</th>
+									      <th data-priority="3"> Apperances</th>
+									      <th data-priority="4">Goals Scored</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+									      <th>brandon smith</th>
+									      <td>hooker</td>
+									      <td>23</td>
+									      <td>39</td>
+									      <td>2</td>
+									    </tr>
+									    <tr>
+									      <th>cameron smith</th>
+									      <td>hooker</td>
+									      <td>35</td>
+									      <td>384</td>
+									      <td>98</td>
+									    </tr>
+									    <tr>
+									      <th>christian welch</th>
+									      <td>prop</td>
+									      <td>24</td>
+									      <td>97</td>
+									      <td>87</td>
+									    </tr>
+									    <tr>
+									      <th>dale finucane</th>
+									      <td>lock</td>
+									      <td>27</td>
+									      <td>96</td>
+									      <td>87</td>
+									    </tr>
+									    <tr>
+									      <th>felsi kafusi</th>
+									      <td>2nd row</td>
+									      <td>32</td>
+									      <td>94</td>
+									      <td>87</td>
+									    </tr>
+									    <tr>
+									      <th>jesse bromwich</th>
+									      <td>prop</td>
+									      <td>26</td>
+									      <td>92</td>
+									      <td>74</td>
+									    </tr>
+									    <tr>
+									      <th>joe stimson</th>
+									      <td>2nd row</td>
+									      <td>28</td>
+									      <td>91</td>
+									      <td>122</td>
+									    </tr>
+									    <tr>
+									      <th>kenneath bromwich</th>
+									      <td>2nd row</td>
+									      <td>34</td>
+									      <td>90</td>
+									      <td>72</td>
+									    </tr>
+									    <tr>
+									      <th>billy walters</th>
+									      <td>five-eigth</td>
+									      <td>30</td>
+									      <td>89</td>
+									      <td>85</td>
+									    </tr>
+									    <tr>
+									      <th>brodie croft</th>
+									      <td>halfback</td>
+									      <td>21</td>
+									      <td>87</td>
+									      <td>56</td>
+									    </tr>
+										<tr>
+									      <th>cameron munster</th>
+									      <td>five-eigth</td>
+									      <td>24</td>
+									      <td>48</td>
+									      <td>78</td>
+									    </tr>
+										<tr>
+										  <th>cheyse blair</th>
+										  <td>centre</td>
+										  <td>28</td>
+									      <td>48</td>
+										  <td>87</td>
+										</tr>
+										<tr>
+												<th>curtis scott</th>
+												<td> centre</td>
+												<td>27</td>
+												<td>98</td>
+												<td>60</td>
+											  </tr>
+										 <tr>
+											<th>jahrome hughes</th>
+											<td>Full back</td>
+											<td>34</td>
+											<td>40</td>
+											<td>25</td>
+											  </tr>
+											  <tr>
+													<th>josh addo-carr</th>
+													<td>winger</td>
+													<td>24</td>
+													<td>90</td>
+													<td>81</td>
+												  </tr>
+												  <tr>
+														<th>justin olam</th>
+														<td>centre</td>
+														<td>28</td>
+														<td>85</td>
+														<td>54</td>
+													  </tr>
+
+									  </tbody>
+									</table>
+					</div><!-- /content -->
+				
+					<div data-role="footer">
+						<h4></h4>
+					</div><!-- /footer -->
+				</div><!-- /page -->
+
+				<!-- competions-->
+				<div data-role="page" id="competitions">
+				
+					<div data-role="header">
+						<h1>Competitions</h1>
+						<a href="#menu" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a> 
+					</div><!-- /header -->
+				
+					<div role="main" class="ui-content">
+							<a href="#Thanks" class="ui-btn ui-btn-a">enter to win a Ticket</a>
+							<a href="#Thanks" class="ui-btn ui-btn-a">enter to win a signed jersey</a>
+					</div><!-- /content -->
+				
+					<div data-role="footer">
+						<h4></h4>
+					</div><!-- /footer -->
+				</div><!-- /page -->
+
+				<!-- sign up-->
+				<div data-role="page" id="sign up">
+				
+					<div data-role="header">
+						<h1>Sign up </h1>
+						<a href="#login" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a> 
+					</div><!-- /header -->
+				
+					<div role="main" class="ui-content">
+
+								<label for="text-basic">Email:</label>
+								<input type="text" name="text-basic" id="text-basic" value="">
+
+							<label for="text-basic">Confirm Email:</label>
+							<input type="text" name="text-basic" id="text-basic" value="">
+						
+							<label for="password">Password:</label>
+							<input type="password" name="password" id="password" value="" autocomplete="off">
+
+							<label for="password"> Confirm Password:</label>
+							<input type="password" name="password" id="password" value="" autocomplete="off">
+
+							<label for="tel">Mobile Number</label>
+							<input type="tel" name="tel" id="tel" value="">	
+
+
+						
+								
+								<form>
+										    <label>
+										        <input type="checkbox" name="checkbox-0 ">check if you would like to receive offers 
+										via email and phone
+										    </label>
+								</form>
+								<a href="#menu" class="ui-btn ui-btn-a">Register</a>
+
+					</div><!-- /content -->
+				
+					<div data-role="footer">
+						<h2></h2>
+					</div><!-- /footer -->
+				</div><!-- /page -->
+
+				<!-- thank tou page -->
+				<div data-role="page" id="Thanks">
+				
+					<div data-role="header">
+						<h4>competitions</h4>
+						<a href="#competitions" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a> 
+					</div><!-- /header -->
+				
+					<div role="main" class="ui-content">
+						<h1>Thank you for entering the competition</h1>
+						<h2>if you are the lucky winner we will notify you via email Good Luck!!!!!!!!!!</h2>
+						
+					</div><!-- /content -->
+				
+					<div data-role="footer">
+						<h4></h4>
+					</div><!-- /footer -->
+				</div><!-- /page -->
+
+				<!-- Start of template-->
+				<div data-role="page" id="???">
+				
+						<div data-role="header">
+							<h1>template</h1>
+						</div><!-- /header -->
+					
+						<div role="main" class="ui-content">
+							<p>template</p>
+							<p><a href="#foo">Back to foo</a></p>
+						</div><!-- /content -->
+					
+						<div data-role="footer">
+							<h4>template</h4>
+						</div><!-- /footer -->
+					</div><!-- /page -->
+				
+
+</body>
+
+
+
+</html>
